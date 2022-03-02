@@ -11,8 +11,9 @@ export const BodyScene = styled.div`
   overflow: hidden;
   perspective: 14em;
   perspective-origin: 50% calc(50% - 2em);
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     min-height: 900px;
+    height: 2800px;
   }
 `;
 export const SceneBox = styled.div`
@@ -26,9 +27,7 @@ export const SceneBox = styled.div`
       transform: rotateY(360deg);
     }
   }
-  @media screen and (max-width: 600px) {
-    height: auto;
-  }
+
   @media screen and (max-width: 1000px) {
     display: none;
   }
@@ -51,7 +50,7 @@ export const FloorContainer = styled.div`
 `;
 export const Ball = styled.div`
   width: 17em;
-  height: 10em;
+  height: auto;
   padding: 0.5rem;
   right: 25%;
   border-radius: 20px;
@@ -100,28 +99,10 @@ export const BallBox = styled.div`
     font-size: 1.2rem;
   }
 `;
-// Progress
-// export const Progress = styled.div`
-//   width: 150px;
-//   height: 150px;
-//   background: none;
-//   position: relative;
 
-//   &::after {
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 50%;
-//     border: 26px solid #eee;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//   }
+// export const ProgressBarLeft = styled.span`
+//   animation: loading-2 1.8s linear forwards 1.8s;
 // `;
-
-export const ProgressBarLeft = styled.span`
-  animation: loading-2 1.8s linear forwards 1.8s;
-`;
 export const ProgressBarRight = styled.span`
 
   animation: loading-1 1.8s linear forwards;
@@ -139,18 +120,19 @@ export const ProgressBarRight = styled.span`
   }
 }
 
-@keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
 
-  100% {
-    -webkit-transform: rotate(79deg);
-    transform: rotate(79deg);
-  }
-}
-`;
+// @keyframes loading-2 {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     -webkit-transform: rotate(79deg);
+//     transform: rotate(79deg);
+//   }
+// }
+// `;
 export const HtmlProgress = styled.span`
 
 animation: html 1.8s linear forwards 1.8s;

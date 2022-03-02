@@ -1,17 +1,12 @@
 import React from "react";
 import {
-  ProgressBarLeft,
   ProgressValue,
   ProgressBarRight,
-  RoundedLg,
-  TextGray,
-  NodeSpan,
   GitProgress,
   ReactProgress,
   HtmlProgress,
   FloorContainer,
   SceneBox,
-  Span,
   BodyScene,
   BallBox,
   Ball,

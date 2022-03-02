@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import images from "../../images/city.jpg";
+// import images from "../../images/city.jpg";
 import {
   BtnLink,
   ProjectArticle,
@@ -9,7 +9,7 @@ import {
   ProjectSection,
   ProjectTitle,
 } from "./ProjectsElements";
-import { Data } from "../../Data";
+// import { Data } from "../../Data";
 import { getProjects } from "../../BackendServices/ProjectsService";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -19,7 +19,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {

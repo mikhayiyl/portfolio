@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { Data } from "../../Data";
+// import { Data } from "../../Data";
 import images from "../../images/city.jpg";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { getProjects } from "../../BackendServices/ProjectsService";
