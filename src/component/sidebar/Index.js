@@ -28,14 +28,7 @@ const Sidebar = ({ toggle, isOpen }) => {
           >
             SKILLS
           </SidebarLink>
-          <SidebarLink
-            spy={true}
-            className={isOpen && "open"}
-            onClick={toggle}
-            to="services"
-          >
-            Services
-          </SidebarLink>
+
           <SidebarLink
             spy={true}
             className={isOpen && "open"}
@@ -43,6 +36,14 @@ const Sidebar = ({ toggle, isOpen }) => {
             to="projects"
           >
             projects
+          </SidebarLink>
+          <SidebarLink
+            spy={true}
+            className={isOpen && "open"}
+            onClick={toggle}
+            to="services"
+          >
+            Contact
           </SidebarLink>
           <SidebarLink
             spy={true}

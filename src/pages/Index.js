@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import Footer from "../component/Footer/Index";
-import {
-  homeObjone,
-  // homeObjThree,
-  // homeObjTwo,
-} from "../component/InfoSection/Data";
-import InfoSection from "../component/InfoSection/Index";
+import { homeObjone } from "../component/InfoSection/Data";
 import Navbar from "../component/Navbar";
 import Sidebar from "../component/sidebar/Index";
 import HeroSection from "./../component/HeroSection/Index";
-// import Projects from "./../component/Projects/Index";
-// import Services from "./../component/Services/Index";
+import InfoSection from "../component/InfoSection/Index";
 import Skills from "./../component/Skills/Index";
+import Projects from "./../component/Projects/Index";
+// import Services from "./../component/Services/Index";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,9 +22,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjone} />
       <Skills />
-      {/* <Services /> */}
-      {/* <Projects /> */}
-      {/* <InfoSection {...homeObjThree} /> */}
+      <Projects />
       <Footer />
     </>
   );

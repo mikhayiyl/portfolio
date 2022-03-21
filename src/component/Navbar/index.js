@@ -17,18 +17,17 @@ import {
 const Navbar = ({ toggle, isOpen }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
   useEffect(() => {
+    const changeNav = () => {
+      if (window.scrollY >= 80) {
+        setScrollNav(true);
+      } else {
+        setScrollNav(false);
+      }
+    };
     window.addEventListener("scroll", changeNav);
-
     return () => window.removeEventListener("scroll", changeNav);
-  }, [changeNav]);
+  }, []);
 
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -71,18 +70,7 @@ const Navbar = ({ toggle, isOpen }) => {
                   SKILLS
                 </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Services
-                </NavLinks>
-              </NavItem>
+
               <NavItem>
                 <NavLinks
                   to="projects"
@@ -93,6 +81,18 @@ const Navbar = ({ toggle, isOpen }) => {
                   offset={-80}
                 >
                   Projects
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Contact
                 </NavLinks>
               </NavItem>
             </NavMenu>

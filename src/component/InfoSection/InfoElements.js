@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#663399a1" : "#0a2a43")};
-
+  background: ${({ lightBg }) => (lightBg ? "#ee82ee" : "#000")};
+  background-image: repeating-conic-gradient(
+    from 45deg,
+    #e70fb873 0deg 90deg,
+    #2bece2a2 90deg 180deg
+  );
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -88,6 +91,9 @@ export const ImgWrap = styled.div`
 `;
 export const Img = styled.img`
   width: 100%;
+  height: 350px;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000;
 `;

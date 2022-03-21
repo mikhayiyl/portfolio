@@ -13,6 +13,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
+import GlowParticle from "../common/GlowParticle";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -21,21 +22,22 @@ const HeroSection = () => {
   };
   return (
     <HeroContainer id="home">
+      <GlowParticle />
       <HeroBg>
         <VideoBg autoPlay loop muted src={video} type="video/mp4"></VideoBg>
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Welcome ,Virtual <HeroSpan></HeroSpan>{" "}
+          Hi, I'm Dancan <HeroSpan></HeroSpan>{" "}
         </HeroH1>
         <HeroH1>
-          Banking Made <HeroSpan></HeroSpan>{" "}
+          Front-end Developer <HeroSpan></HeroSpan>{" "}
         </HeroH1>
         <HeroH1>
-          Easy and Accessible <HeroSpan></HeroSpan>
+          & Build User Interfaces <HeroSpan></HeroSpan>
         </HeroH1>
         <HeroP>
-          Sign Up for a new Account and get $150 Discount in your first Deposit
+          Striving to make the web a Perfect & a Better place for all
         </HeroP>
         <HeroBtnWrapper>
           <Button

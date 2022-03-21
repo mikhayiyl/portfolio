@@ -32,9 +32,14 @@ export default function AllProjects() {
   const classes = useStyles();
   const [projects, setProjects] = useState([]);
 
-  useEffect(async () => {
-    const { data } = await getProjects();
-    setProjects(data);
+  useEffect(() => {
+    async function fetchData() {
+      // You can await here
+      const { data } = await getProjects();
+      setProjects(data);
+      // ...
+    }
+    fetchData();
   }, []);
 
   return (

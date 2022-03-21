@@ -3,35 +3,18 @@ export const homeObjone = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topline: "Premium Bank",
-  headline: "Unlimited Transaction with zero fees",
+  topline: "About",
+  headline: "To create a new Future with Codes",
   description:
-    "Get Access to our exclusive app that allows you to send unlimited transactions without getting charged any  fees",
-  buttonLabel: "Get Started",
+    "I am a Web developer from Nairobi Kenya & I enjoy buiding Beautiful Interactive Web Apps. For a business Seeking Web Presence or an employer looking to hire Kindly Contact me   ",
+  buttonLabel: "Contact Me",
   imgStart: false,
-  img: require("../../images/beach.jpg"),
-  alt: "Car",
+  img: require("../../images/cotton.jpg"),
+  alt: "prism",
   dark: true,
   primary: true,
   darkText: false,
 };
-
-// export const homeObjTwo = {
-//   id: "skills",
-//   lightBg: true,
-//   lightText: false,
-//   lightTextDesc: false,
-//   topline: "Unlimited Access",
-//   headline: "Login any time",
-//   description: "Our clients are fully covered no Matter the Region",
-//   buttonLabel: "Read More",
-//   imgStart: true,
-//   img: require("../../images/beach.jpg"),
-//   alt: "Car",
-//   dark: false,
-//   primary: false,
-//   darkText: true,
-// };
 
 export const homeObjThree = {
   id: "signup",
