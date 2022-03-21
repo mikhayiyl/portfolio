@@ -1,5 +1,5 @@
 import React from "react";
-import Icon1 from "../../images/beach.jpg";
+// import Icon1 from "../../images/beach.jpg";
 import {
   ServicesContainer,
   ServicesH1,
