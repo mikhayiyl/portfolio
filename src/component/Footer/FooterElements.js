@@ -84,12 +84,16 @@ export const SocialLogo = styled(Link)`
   color: #fff;
   justify-content: start;
   cursor: pointer;
-  text-decoration: none;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: orangered;
+  }
 `;
 export const WebsiteRights = styled.small`
   color: #fff;

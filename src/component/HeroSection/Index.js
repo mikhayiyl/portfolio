@@ -28,14 +28,19 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Hi, I'm Dancan <HeroSpan></HeroSpan>{" "}
+          <span className="colorspan1"> Hi</span>, I'm{" "}
+          <span className="colorspan2">Da</span>ncan <HeroSpan></HeroSpan>{" "}
         </HeroH1>
         <HeroH1>
-          Front-end Developer <HeroSpan></HeroSpan>{" "}
+          <span className="colorspan3">Fr</span>ont-end{" "}
+          <span className="colorspan4">Dev</span>eloper <HeroSpan></HeroSpan>{" "}
         </HeroH1>
         <HeroH1>
-          & Build User Interfaces <HeroSpan></HeroSpan>
+          & <span className="colorspan5">Bui</span>ld{" "}
+          <span className="colorspan6">U</span>ser{" "}
+          <span className="colorspan7">In</span>terfaces <HeroSpan></HeroSpan>
         </HeroH1>
+
         <HeroP>
           Striving to make the web a Perfect & a Better place for all
         </HeroP>

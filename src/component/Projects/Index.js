@@ -1,8 +1,8 @@
 import React from "react";
 import Sliders from "../common/Sliders";
 import {
-  Ball,
-  BallBox,
+  Wrapper,
+  ProjectTitle,
   BodyScene,
   FloorContainer,
   ProjectBtn,
@@ -16,14 +16,14 @@ export default function Index() {
         <FloorContainer></FloorContainer>
       </SceneBox>
 
-      <Ball>
-        <BallBox className="col-lg-12 mx-auto mb-5 text-white text-center">
+      <Wrapper>
+        <ProjectTitle className="col-lg-12 mx-auto mb-5 text-white text-center">
           <h1 id="projects" className="display-4">
             PROJECTS
           </h1>
-        </BallBox>
+        </ProjectTitle>
         <Sliders />
-      </Ball>
+      </Wrapper>
 
       <ProjectBtn to="/projects" className="btn btn-warning">
         ALL PROJECTS

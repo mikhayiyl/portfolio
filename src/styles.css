@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -322,7 +323,6 @@ div.h4 {
 .progressActive {
   animation: reverse progress-bar-stripes 0.4s linear infinite,
     animate-positive 3s;
-  /* background-color: green; */
 }
 @-webkit-keyframes animate-positive {
   0% {
@@ -344,6 +344,257 @@ div.h4 {
   text-shadow: 3px 4px yellow;
 }
 
-img {
-  border-radius: 20px;
+/* CONTACT PAGE*/
+#contact .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.section-title {
+  font-size: 40px;
+  font-weight: 300;
+  color: #060ecf;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.section-title span {
+  color: #ff652f;
+}
+
+#contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 400px;
+  padding: 20px;
+}
+
+#contact .contact-item {
+  width: 80%;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 18px 0 #000000;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#contact .contact-item .icon {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-item .contact-info h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-item .contact-info h2 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #000000;
+  text-decoration: none;
+}
+
+#contact .contact-item:hover .fa {
+  color: #ff652f;
+}
+
+@media (min-width: 760px) {
+  #contact .contact-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  #contact .contact {
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+  }
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 10px;
+  }
+  #contact .contact-item {
+    width: 30%;
+    margin: 10px 0 0;
+    flex-direction: row;
+  }
+  #contact .contact-item .icon {
+    object-fit: contain;
+  }
+  #contact .contact-item .fa {
+    font-size: 60px;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+/* LEAVES ANIMATION */
+.set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.set div {
+  position: absolute;
+  display: block;
+}
+.set div:nth-child(1) {
+  left: 20%;
+  animation: leaves 15s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(2) {
+  left: 50%;
+  animation: leaves 20s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(3) {
+  left: 70%;
+  animation: leaves 20s linear infinite;
+  animation-delay: 0s;
+}
+.set div:nth-child(4) {
+  left: 0%;
+  animation: leaves 15s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(5) {
+  left: 85%;
+  animation: leaves 18s linear infinite;
+  animation-delay: -10s;
+}
+.set div:nth-child(6) {
+  left: 0%;
+  animation: leaves 12s linear infinite;
+}
+.set div:nth-child(7) {
+  left: 15%;
+  animation: leaves 14s linear infinite;
+  transform: scale(0.8) rotateY(180deg);
+  filter: blur(2px);
+}
+.set div:nth-child(8) {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+  left: 60%;
+  animation: leaves 15s linear infinite;
+}
+
+@keyframes leaves {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translate(20px) rotate(0deg);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translate(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translate(20px) rotate(180deg);
+  }
+  80% {
+    transform: translate(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translate(-20px) rotate(225deg);
+  }
+}
+
+.set2 {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+.set3 {
+  transform: scale(0.8) rotateY(180deg);
+  filter: blur(2px);
+}
+
+.colorspan1 {
+  animation: ColorSpan 20s ease-in forwards infinite;
+}
+.colorspan2 {
+  animation: ColorSpan 30s ease-in forwards infinite;
+}
+.colorspan3 {
+  animation: ColorSpan 40s ease-in forwards infinite;
+}
+.colorspan4 {
+  animation: ColorSpan 50s ease-in forwards infinite;
+}
+.colorspan5 {
+  animation: ColorSpan 60s ease-in forwards infinite;
+}
+.colorspan6 {
+  animation: ColorSpan 70s ease-in forwards infinite;
+}
+.colorspan7 {
+  animation: ColorSpan 80s ease-in forwards infinite;
+}
+
+@keyframes ColorSpan {
+  0% {
+    color: #fff;
+  }
+  25% {
+    color: #ff022c;
+    font-weight: 600;
+  }
+  50% {
+    color: orangered;
+    font-weight: 800;
+  }
+  100% {
+    font-weight: 900;
+    color: #008cff9d;
+  }
 }

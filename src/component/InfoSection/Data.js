@@ -15,21 +15,3 @@ export const homeObjone = {
   primary: true,
   darkText: false,
 };
-
-export const homeObjThree = {
-  id: "signup",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topline: "Become a Member",
-  headline: "Creating an account is Free and extremely easy",
-  description:
-    "Get All services under one App all you need is to sign up and get Started",
-  buttonLabel: "Start Now",
-  imgStart: false,
-  img: require("../../images/beach.jpg"),
-  alt: "paper",
-  dark: false,
-  primary: false,
-  darkText: true,
-};

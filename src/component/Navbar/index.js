@@ -85,7 +85,7 @@ const Navbar = ({ toggle, isOpen }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to="contact"
                   smooth={true}
                   duration={500}
                   spy={true}

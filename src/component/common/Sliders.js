@@ -9,12 +9,13 @@ import SwiperCore, {
   Navigation,
 } from "swiper/core";
 
-import ProjectCard from "../Projects/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { SwiperContainer } from "./SwiperStyles";
+import { Data } from "../../Data";
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 export default function App() {
+  const { projects } = Data;
   return (
     <SwiperContainer>
       <Swiper
@@ -36,24 +37,11 @@ export default function App() {
         }}
         className="mySwiper my-3"
       >
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
+        {projects.map((project) => (
+          <SwiperSlide key={project._id}>
+            <ProjectCard {...project} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </SwiperContainer>
   );

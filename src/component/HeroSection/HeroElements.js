@@ -60,7 +60,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   display: block;
   position: relative;
-  font-weight:600;
+  font-weight:400;
   color: transparent;
   font-size: 3rem;
   text-align: center;
@@ -152,8 +152,8 @@ export const HeroP = styled.p`
   }
 
   animation: text-color 5s ease-in forwards;
-
-  }
+  
+}
 `;
 
 export const HeroBtnWrapper = styled.div`

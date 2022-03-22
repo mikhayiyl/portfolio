@@ -7,7 +7,7 @@ import HeroSection from "./../component/HeroSection/Index";
 import InfoSection from "../component/InfoSection/Index";
 import Skills from "./../component/Skills/Index";
 import Projects from "./../component/Projects/Index";
-// import Services from "./../component/Services/Index";
+import ContactPage from "./../component/ContactPage/index";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,6 +23,7 @@ const Home = () => {
       <InfoSection {...homeObjone} />
       <Skills />
       <Projects />
+      <ContactPage />
       <Footer />
     </>
   );
